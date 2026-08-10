@@ -1,0 +1,29 @@
+# CI 관문 (CLAUDE.md §4.2). 프로젝트 고유 단계를 아래 TODO 에 채운다.
+name: gates
+
+on:
+  push:
+    branches: ["**"]
+  pull_request:
+
+jobs:
+  gates:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      # 명세 ↔ 코드 양방향 링크 (CLAUDE.md §2.4)
+      - name: spec links
+        run: python3 tools/spec/check_spec_links.py
+
+      # TODO(PROJECT): 빌드 · 테스트 · 린트 · 타입 검사
+      # - name: test
+      #   run: <프로젝트 테스트 명령>
+
+      # 생성물이 손으로 수정되지 않았는지 (CLAUDE.md §4.2)
+      - name: no uncommitted generated files
+        run: git diff --exit-code

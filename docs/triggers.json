@@ -1,0 +1,22 @@
+{
+  "_comment": [
+    "미룬 작업 등록부 (CLAUDE.md §4.5).",
+    "'지금 하지 않는다'고 정한 것은 여기에 조건과 함께 등록한다.",
+    "상태: 대기 | 발화 | 완료 | 측정불가",
+    "조건이 넘었는데 상태가 '대기' 면 CI 가 실패한다.",
+    "지표가 없어 평가할 수 없으면 '측정불가' 로 두고 why_unmeasurable 을 적는다."
+  ],
+  "triggers": [
+    {
+      "id": "TRG-EXAMPLE-001",
+      "title": "예시 — 지우고 다시 쓴다",
+      "deferred": "무엇을 지금 하지 않기로 했는가",
+      "reason": "왜 지금 하지 않는가",
+      "condition": "어떤 지표가 어떤 값을 넘으면 해야 하는가 (예: p99_latency_ms > 200)",
+      "metric_source": "그 지표를 어디서 읽는가 (예: .evidence/**/result.json 의 p99_latency_ms)",
+      "status": "대기",
+      "why_unmeasurable": null,
+      "spec": null
+    }
+  ]
+}
