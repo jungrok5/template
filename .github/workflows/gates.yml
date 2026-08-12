@@ -20,6 +20,10 @@ jobs:
       - name: spec links
         run: python3 tools/spec/check_spec_links.py
 
+      # 되살아난 말 · 없는 이름을 가리키는 문서 · 빠진 시제 표시 (CLAUDE.md §2.5~§2.8)
+      - name: docs vs code
+        run: python3 tools/docs/check_docs_vs_code.py
+
       # TODO(PROJECT): 빌드 · 테스트 · 린트 · 타입 검사
       # - name: test
       #   run: <프로젝트 테스트 명령>
