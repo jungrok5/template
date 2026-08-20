@@ -15,6 +15,7 @@
 |---|---|
 | [`CLAUDE.md`](./CLAUDE.md) | **공통 작업 규칙.** AI 가 매 세션 시작 시 읽는다 |
 | [`GLOSSARY.md`](./GLOSSARY.md) | 용어집 — 같은 개념에 다른 이름이 붙는 것을 막는다 |
+| [`docs/rules-rationale.md`](./docs/rules-rationale.md) | **규칙의 근거** — 왜 그 규칙이 있는가. 규칙을 고치거나 뺄 때 읽는다 |
 | [`docs/spec/`](./docs/spec/README.md) | 명세 — "무엇을 · 왜"의 단일 진실 원천. 코드와 양방향 링크 |
 | [`docs/triggers.json`](./docs/triggers.json) | 미룬 작업 등록부 — 조건이 넘으면 CI 가 알린다 |
 | [`docs/docs-vs-code.json`](./docs/docs-vs-code.json) | **지운 이름 · 지운 말 · 문서의 시제** 등록부 |

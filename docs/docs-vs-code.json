@@ -18,7 +18,7 @@
     "여기 없는 .md 파일이 생기면 검사기가 운다. 그때 시제를 정하거나 tense_exempt 로 뺀다."
   ],
   "tense": {
-    "지금": ["CLAUDE.md", "GLOSSARY.md", "README.md"],
+    "지금": ["CLAUDE.md", "GLOSSARY.md", "README.md", "docs/rules-rationale.md"],
     "그때": [],
     "앞으로": []
   },
